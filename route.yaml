@@ -1,0 +1,33 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  annotations:
+    openshift.io/generated-by: OpenShiftNewApp
+    openshift.io/host.generated: "true"
+  creationTimestamp: "2020-05-06T17:57:37Z"
+  labels:
+    app: cakephp-mysql-example
+    template: cakephp-mysql-example
+  name: cakephp-mysql-example
+  namespace: 4e41-yaml-app
+  resourceVersion: "415387143"
+  selfLink: /apis/route.openshift.io/v1/namespaces/4e41-yaml-app/routes/cakephp-mysql-example
+  uid: 12560050-8fc3-11ea-9655-0a580a8100f0
+spec:
+  host: cakephp-mysql-example-4e41-yaml-app.apps.shared.na.openshift.opentlc.com
+  subdomain: ""
+  to:
+    kind: Service
+    name: cakephp-mysql-example
+    weight: 100
+  wildcardPolicy: None
+status:
+  ingress:
+  - conditions:
+    - lastTransitionTime: "2020-05-06T17:57:37Z"
+      status: "True"
+      type: Admitted
+    host: cakephp-mysql-example-4e41-yaml-app.apps.shared.na.openshift.opentlc.com
+    routerCanonicalHostname: apps.shared.na.openshift.opentlc.com
+    routerName: default
+    wildcardPolicy: None
