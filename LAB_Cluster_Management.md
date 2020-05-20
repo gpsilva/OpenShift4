@@ -340,4 +340,24 @@ ip-10-0-170-252.us-east-2.compute.internal   Ready    master   4h33m   v1.13.4+c
 * Expect to see that one of the worker nodes is now newer than the other one. This is the node that you added to the cluster.
 * Also note the internal and external IP addresses, and that none of the nodes has an external IP address.
 
-### 2. Validation
+### Explore on Your own
+
+Here are a few ideas to get you started:
+
+How would you create NetworkPolicy objects?
+
+Can you provision and deploy an operator from the web console? Where would you do this?
+
+Where is the router running, and what controls the router?
+
+Which API object holds the configuration for the router? Which project is that object in?
+
+Which storage options are available on a freshly created cluster?
+
+There is a custom resource default of type Tuned in project openshift-cluster-node-tuning-operator. What can you deduce by describing this object?
+
+How is the cluster DNS configured?
+
+Hint: There is an API object of type ClusterDNS.
+
+Which project is that in? What controls it?
